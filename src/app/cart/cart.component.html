@@ -1,0 +1,219 @@
+<!-- <section>
+    <div class="spacer">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-lg-9">
+            <div class="row shop-listing">
+              <table class="table shop-table" *ngIf="carts">
+                <tr>
+                  <th class="b-0">Name</th>
+                  <th class="b-0">imageName</th>
+                  <th class="b-0">category</th>
+                  <th class="b-0">colour</th>
+                  <th class="b-0">size</th>
+                  <th class="b-0">discription</th>
+                  <th class="b-0">Price</th>
+                  <th class="b-0">Quantity</th>
+                  <th class="b-0 text-right">Total Price</th>
+                </tr>
+                <tr *ngFor="let item of carts.items">
+                  <td>{{ item.productId.name }}</td>
+                  <td>{{ item.productId.imageName }}</td>
+                  <td>{{ item.productId.category }}</td>
+                  <td>{{ item.productId.colour }}</td>
+                  <td>{{ item.productId.size }}</td>
+                  <td>{{ item.productId.discription }}</td>
+                  <td>{{ item.productId.price }}</td>
+                  <td>
+                    <button class="btn btn-primary btn-sm" (click)="_increamentQTY(item.productId._id,1)">+</button>
+                    {{ item.quantity }}
+                    <button class="btn btn-primary btn-sm">-</button>
+                  </td>
+                  <td class="text-right">
+                    <h5 class="font-medium m-b-30">{{ item.total }}</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3">Subtotal :{{ carts.subTotal }}</td>
+                  <td colspan="4">
+                    <button class="btn btn-danger" (click)="_emptyCart()">Empty Cart</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </div>
+  </section> -->
+<!-- <table style="width: 100%;margin: 10px;" mat-table [dataSource]="cartDetails" class="mat-elevation-z8" *ngIf="carts">
+
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let item" > {{item.productId.name}} </td>
+    </ng-container> -->
+
+    <!-- <ng-container matColumnDef="nameImage">
+        <th mat-header-cell *matHeaderCellDef> imageName </th>
+        <td mat-cell > {{item.productId.imageName}} </td>
+    </ng-container> -->
+<!-- 
+    <ng-container matColumnDef="category">
+        <th mat-header-cell *matHeaderCellDef> category </th>
+        <td mat-cell *matCellDef="let item"> {{item.productId.category}} </td>
+    </ng-container>
+    <ng-container matColumnDef="colour">
+        <th mat-header-cell *matHeaderCellDef> colour </th>
+        <td mat-cell *matCellDef="let item"> {{item.productId.colour}} </td>
+    </ng-container>
+    <ng-container matColumnDef="size">
+        <th mat-header-cell *matHeaderCellDef> size </th>
+        <td mat-cell *matCellDef="let item"> {{item.productId.size}} </td>
+    </ng-container>
+ <ng-container matColumnDef="discription">
+        <th mat-header-cell *matHeaderCellDef> Discription </th>
+        <td mat-cell > {{item.productId.discription}} </td>
+    </ng-container> -->
+    <!-- <ng-container matColumnDef="price">
+        <th mat-header-cell *matHeaderCellDef> price </th>
+        <td mat-cell *matCellDef="let item"> {{item.productId.price}} </td>
+    </ng-container>
+    <ng-container matColumnDef="quantity">
+        <th mat-header-cell *matHeaderCellDef> Quantity </th>
+           <td mat-cell *matCellDef="let item" > <button class="btn btn-primary btn-sm"
+                (click)="_increamentQTY(item.productId._id,1)">+</button>
+            {{ item.quantity }}
+            <button class="btn btn-primary btn-sm">-</button>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="total">
+        <th mat-header-cell *matHeaderCellDef> total </th>
+        <td mat-cell *matCellDef="let item "> {{carts.total}} </td>
+    </ng-container>
+ 
+
+    <tr mat-header-row *matHeaderRowDef="['name','category', 'colour', 'size', 'price', 'quantity', 'total']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['name','category','colour', 'size', 'price', 'quantity', 'total'];"></tr>
+</table> --> 
+   
+   <!-- //<h3>Subtotal:{{item.productId.name}} </h3> -->
+
+   <!-- <h3>Subtotal:{{item.total}} </h3> -->
+<!-- <div id="btnstu">
+    <button mat-raised-button color="primary" (click)="add()">create</button>
+</div>
+<div id="btnstu2">
+    <button mat-raised-button color="primary" (click)="class()">Back</button>
+
+</div> -->
+   <!-- <ng-container matColumnDef="age">
+        <th mat-header-cell *matHeaderCellDef> Total Price </th>
+        <td mat-cell *matCellDef="let element"> {{item.productId.imageName}} </td>
+    </ng-container> -->
+    <!-- <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef> </th>
+        <td mat-cell *matCellDef="let element">
+            <button mat-raised-button color="primary" (click)="select(element.id)">Select</button>
+            <button mat-raised-button color="warn" (click)="delete(element.id)">Delete</button>
+        </td>
+    </ng-container> -->
+<!-- 
+    <div *ngFor=" let item of carts.items">
+        {{item.productId.price}} 
+        {{item.productId.colour}}
+        {{item.productId.size}}  
+        {{item.productId.name}}
+
+    </div> -->
+
+
+
+<!--    
+<table>
+  <tr>
+    <th>name</th>
+    <th>test</th>
+    <th>test</th>
+  </tr>
+  <tr *ngFor="let item of carts.items">
+    <td> {{item.productId.name}}</td>
+    <td> {{item.productId.category}}</td>
+    <td> {{item.productId.size}}</td>
+
+
+  </tr>
+</table>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cartmargin">
+
+<table class="table table-striped" id = "merjn11">
+  <thead class="active">
+  <tr>
+    <th scope="col">Image</th>
+    <th scope="col">Name</th>
+    <th scope="col">Category</th>
+    <th scope="col">colour</th>
+    <th scope="col">size</th>
+    <th scope="col">price</th>
+    <th class="b-0">Quantity</th>
+    <th scope="col">Total Price</th>
+    <th scope="col">Remove</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of carts.items">
+  
+  <td >
+    <img class="img" src="http://localhost:9090/download/{{item.productId.productA1}}" alt="Photo of a Shiba Inu">
+  </td>
+    <td>
+       {{item.productId.productName}} 
+    </td>  
+    <td>{{ item.productId.category }}</td>
+    <td>{{ item.productId.colour }}</td>
+    <td>{{ item.productId.size }}</td>
+    <td>{{ item.productId.price }}</td>
+    <td>
+      
+      <button class="btn btn-primary btn-sm" (click)="_increamentQTY(item.productId._id,1)">+</button>
+      {{ item.quantity }}
+      <button class="btn btn-primary btn-sm"(click)="_decrementQTY(item.productId._id)" >-</button>
+    </td>
+    <td >
+      <h5 >{{ item.total }}</h5>
+    </td>
+    <td >
+      <button   color="basic" (click)="remItem(item.productId._id)" mat-button>
+        <mat-icon>delete</mat-icon></button>
+    
+    </td>
+  </tr>
+  </tbody>
+</table>
+<!-- <button id="empty" mat-raised-button color="warn" (click)="_emptyCart()">Empty Cart</button> -->
+<h2 class="subtotal">Subtotal:{{carts.subTotal}} </h2>
+
+<div class="btn9">
+<button class="btn99" mat-raised-button color="primary" (click)="order()">Order</button>
+<!-- </div>
+{{carts.subTotal}} 
+
+</div> -->

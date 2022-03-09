@@ -1,0 +1,82 @@
+
+/* .widths{
+  width: 30%;
+} */
+#imga{
+  width:99%;
+}
+/* #margin55{
+  margin-top: 2%;
+} */
+#pprice{
+  color:black;
+}
+#alignPrice{
+  margin-top: -3%;
+  color:rgb(255, 72, 0);
+}
+#alignBody{
+  margin-top: 2%;
+}
+/* #searchBox{
+  margin-top:1%;  
+  margin-bottom:2%;  
+  text-align:center;
+} */
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-accent .mat-pseudo-checkbox-checked, .mat-accent .mat-pseudo-checkbox-indeterminate, .mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate {
+  background-color:#1266f1 !important; 
+}
+#applybtn1{
+  width:83%;
+margin-left: 8%;
+}
+#heading55{
+  text-align:center;
+  margin-bottom: -10%;
+}
+#searchContainer{
+margin-bottom: 1%;
+margin-top: -1%;
+}
+#spacing12{
+  margin-top: 1%;
+  width:22%;
+}
+.priceRangebtns{
+ text-align: center;
+ margin-top:-10%;
+}
+.pricerangebtn{ 
+  margin: 2.5%;
+  width: 100%;
+}
+#pr{
+  text-align: center;
+  font-size: 16.5px;
+}
+
+.style02{
+  margin-top: 2%;
+  margin-bottom: 15%;
+}
+/* .cardStyle{
+  border-radius: 100%;
+  width:100%;
+  height: 120%;
+  margin: 2%;
+} */
+
+.cardStyle2{
+  border-radius: 50%;
+  width:100%;
+ margin-top: 2%;
+}
+
+.imagesize{
+ width:20%; 
+}
+.alignCent{
+  text-align:center;
+  margin-top:2%;
+  margin-bottom: -2%;
+}

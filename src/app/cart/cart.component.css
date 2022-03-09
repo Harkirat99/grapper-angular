@@ -1,0 +1,28 @@
+.btn99{
+    text-align: center;
+    width: 400px;
+}
+.btn9{
+    text-align: center;
+   margin-top:1%;
+
+
+}
+.img{
+    margin-top:-10px;
+    width: 100px;
+    height: 70px;
+}
+
+.subtotal{
+    text-align:center;
+}
+#empty{
+    text-align:center;
+    margin-left: 46%;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+}
+.cartmargin{
+    margin-top:3.5%;
+}

@@ -1,0 +1,42 @@
+/* .mainCont {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .inputCont {
+    width: 100%;
+    margin: 10px;
+  }
+  
+  .leftButton {
+    margin-right: 10px;
+  }          
+  
+  .rightButton {
+    margin-left: 10px;
+  }  
+  form, input {
+    text-align: center;
+  } */
+ 
+  .example-card {
+
+    margin-top: 3%;   
+   width:50%;
+   height:40%;
+   margin-left: 25%;
+   }
+ #submitbtn{  
+     text-align: center;
+ }
+ #test{
+     margin-left: 42%;    
+ }
+ #matdisplay{
+     text-align: center;
+     margin-top: 5%;
+ }
+ .redirectLogin{
+     text-align: center;
+ }

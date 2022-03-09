@@ -1,0 +1,112 @@
+.css99{
+  margin-left:3%;
+  margin-top: -1%;
+  }
+  .css9{
+      padding: 2%;
+  }
+  #headline{
+      text-align: center;
+      margin-top:1%;
+  }
+   .applycss{
+    /* height: 150px;
+    width: 150px; */
+      
+  margin-top: 3%;
+  } 
+  #head{
+      margin-top: 4%;
+      text-align: center;
+  }
+  #para{
+  text-align: center;
+  margin-top:-1.7%;
+  }
+  #head2{
+      color:#ff3c00;
+      padding-left: 2%;
+  }
+  #head1{   
+  margin-left: 40%;}
+  #p12{
+      justify-content:right;
+      padding: 5%;
+  }
+  #table1{
+  text-align: center;
+  }
+  #image1{
+  width: 100%;
+  height: 100%;
+  }
+  #stock{
+      color:rgb(3, 95, 3);
+      margin-left:5%;
+      margin-top:-4%;
+  }
+  #buttons{
+      text-align:center;
+     padding-bottom: 5%;
+  
+  }
+  .dis1{
+    margin-left: 5%;
+   
+  }
+  .dis2{
+      margin-left: 3%;
+    }
+    .sizeChart{
+        width:90%;
+        margin-left:5%;
+    }
+    .sizeChartHeading{
+        text-align: center;
+        margin-right: 9%;
+    }
+    #sizedec{  
+    margin-left:0.5%;
+    }
+
+    #relatedProducts{
+        width:70%;
+        margin:2%;
+    }
+
+    .zoom:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+      .zoom {      
+        transition: transform .2s; /* Animation */
+
+      }
+      .mat-display-2{
+          text-align: center;
+      }
+
+      .textArea{
+          text-align: center;
+      }
+      .inputFld{
+          margin-left:13%;
+      }
+      .commentSec{
+        text-align: center
+    }
+    .container1{
+        margin-left: 15%;
+        background-color: #d7e4f7;
+    }
+    .margin-top-all-content{
+        margin-top: 3.5%;
+    }
+          
+    .img-fluid{
+        width: 750px;
+        height: 150px;     
+    }
+    .prImg{
+        width: 700px;
+        height: 600px;
+    }    

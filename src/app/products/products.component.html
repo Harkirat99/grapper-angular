@@ -1,0 +1,238 @@
+<!--  lower part is filter box box  -->
+
+
+
+<mat-carousel
+timings="250ms ease-in"
+[autoplay]="true"
+[interval]="5000"
+color="primary"
+maxWidth="auto"
+[proportion]="25"
+[slides]="5"
+[loop]="true"
+[hideArrows]="false"
+[hideIndicators]="true"
+[useKeyboard]="true"
+[useMouseWheel]="false"
+orientation="ltr"
+ >
+ 
+<mat-carousel-slide
+  #matCarouselSlide
+  *ngFor="let slide of slides; let i = index"
+  [image]="slide.image"
+  overlayColor="#00000040"
+  [hideOverlay]="false"
+  
+></mat-carousel-slide>
+</mat-carousel> 
+
+
+ <div class="container-fluid">
+  <div class="row row-cols-5">
+    <div class="col" class="alignCent">
+      <a>
+        <div >
+          <img class="imagesize" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/800px-Adidas_Logo.svg.png">
+          
+         <h3>Addidas</h3> 
+        </div>
+      </a>
+    </div>
+    <div class="col" class="alignCent">
+      <a>
+      <div >
+        <img class="imagesize" src="https://images.puma.net/images/fn/~regional~PNA~others~KOP~Logos~PUMA_Logo_Cat_black.png">
+        
+       <h3>Puma</h3> 
+      </div>
+    </a>
+    </div>
+    <div class="col" class="alignCent">
+      <button> hello </button>
+    </div>
+    <div class="col" class="alignCent">
+      <button> hello </button>
+    </div>
+    <div class="col" class="alignCent">
+      <button> hello </button>
+    </div>
+
+  </div>
+</div> 
+
+
+
+<section class="section-content padding-y">
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <aside class="col-md-3" id="spacing12">
+        <hr>
+        <div class="card">
+
+          <article class="filter-group">
+
+            <!-- <div class="filter-content collapse show" id="collapse_2"> -->
+            <div class="card-body">
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" checked="" class="custom-control-input">
+                <mat-checkbox (change)="cMen($event)">Men</mat-checkbox>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" checked="" class="custom-control-input">
+                <mat-checkbox (change)="cWomen($event)">Women</mat-checkbox>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" checked="" class="custom-control-input">
+                <mat-checkbox (change)="cChild($event)">Child</mat-checkbox>
+              </label>
+            </div>
+            <!-- </div> -->
+          </article>
+          <div id="applybtn1">
+            <button class="btn btn-block btn-primary" (click)="getCategory()">Apply</button>
+          </div>
+
+
+
+          <hr>
+          <!-- This is price feature  -->
+          <div id="heading55">
+            <h3>Popular Brands</h3>
+          </div>
+          <article class="filter-group">
+
+            <!-- <div class="filter-content collapse show" id="collapse_2"> -->
+            <div class="card-body">
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" checked="" class="custom-control-input">
+                <mat-checkbox>Puma</mat-checkbox>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" checked="" class="custom-control-input">
+                <mat-checkbox>Addidas</mat-checkbox>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" checked="" class="custom-control-input">
+                <mat-checkbox>Woodland</mat-checkbox>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" checked="" class="custom-control-input">
+                <mat-checkbox>Asian</mat-checkbox>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" checked="" class="custom-control-input">
+                <mat-checkbox>Saga</mat-checkbox>
+              </label>
+            </div>
+            <!-- </div> -->
+          </article>
+          <div id="applybtn1">
+            <button class="btn btn-block btn-primary" (click)="getCategory()">Apply</button>
+          </div>
+
+          <hr>
+
+          <article class="filter-group">
+
+            <h3 id="pr">Price Ranges</h3>
+            <div class="card-body">
+
+
+              <mat-form-field appearance="fill" floatLabel="always">
+                <mat-label>Minumum</mat-label>
+                <input matInput type="number" [(ngModel)]="minimumPrice" name="minimumPrice" class="form-control"
+                  class="example-right-align" placeholder="0">
+                <span matPrefix>$&nbsp;</span>
+                <span matSuffix>.00</span>
+              </mat-form-field>
+
+              <mat-form-field appearance="fill" floatLabel="always">
+                <mat-label>Maximum</mat-label>
+                <input matInput type="number" [(ngModel)]="maximumPrice" name="maximumPrice" class="form-control"
+                  class="example-right-align" placeholder="0">
+                <span matPrefix>$&nbsp;</span>
+                <span matSuffix>.00</span>
+              </mat-form-field>
+            </div>
+            <!-- </div> -->
+          </article>
+          <div id="applybtn1">
+            <button class="btn btn-block btn-primary" (click)="priceRange()">Apply</button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- This id Card body  -->
+      <main class="col-md-9" id="alignBody">
+        <div class="row">
+          <div class="col-lg-6" *ngFor="let product of products">
+            <figure class="card card-product-grid">
+              <div class="img-wrap">
+                <img id="imga" src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+              </div>
+              <figcaption class="info-wrap">
+                <div class="fix-height">
+                  <h3>Great item name goes here </h3>
+                  <div class="price-wrap mt-2" id="alignPrice">
+                    <!-- <span class="price" id="pprice">$1280</span> -->
+                    <h2 class="price">${{product.price}}</h2>
+
+                  </div>
+                </div>
+                <button class="btn btn-block btn-primary" (click)="view(product.id)">
+                  View
+                </button>
+              </figcaption>
+            </figure>
+
+          </div>
+
+
+
+
+
+
+        </div>
+      </main>
+
+
+
+      <main class="col-sm-12" class="style02">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="view view-cascade overlay">
+              <img class="card-img-top" class="cardStyle2"
+                src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+              <a (click)="test()">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="view view-cascade overlay">
+              <img class="card-img-top" class="cardStyle2"
+                src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+              <a (click)="test()">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="view view-cascade overlay">
+              <img class="card-img-top" class="cardStyle2"
+                src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+              <a (click)="test()">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </main> 
